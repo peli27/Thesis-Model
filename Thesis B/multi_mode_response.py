@@ -94,20 +94,18 @@ def combine_modal_responses(modal_responses):
     """
     Combines all modal responses using modal superposition.
     """
-
     total_response = np.sum(modal_responses, axis=0)
-
+    
     return total_response
 
 
 def reconstruct_displacement_at_point(modal_responses, x_position):
     """
     Reconstructs physical beam displacement at a selected point.
-
     For a simply-supported beam:
         w(x,t) = sum(phi_i(x) * q_i(t))
         phi_i(x) = sin(i*pi*x)
-
+        
     x_position is normalised:
         x = 0     left support
         x = 0.5   midpoint
