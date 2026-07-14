@@ -3,7 +3,7 @@ This script trains a feedforward neural network to predict beam dynamic response
 quantities from input beam parameters.
 
 Inputs:
-    L, b, h, E, rho, damping_ratio
+    L, b, h, E, rho, damping_ratio, force_amplitude, excitation_frequency
 
 Outputs:
     f1, f2, f3, f4, peak_displacement, rms_displacement
@@ -48,6 +48,8 @@ INPUT_COLUMNS = [
     "E",
     "rho",
     "damping_ratio",
+    "force_amplitude",
+    "excitation_frequency"
 ]
 
 OUTPUT_COLUMNS = [
@@ -298,7 +300,7 @@ torch.save(
         "output_columns": OUTPUT_COLUMNS,
         "input_size": input_size,
         "output_size": output_size,
-        "architecture": "6-64-64-32-6 feedforward neural network",
+        "architecture": "8-64-64-32-6 feedforward neural network",
     },
     model_save_path
 )

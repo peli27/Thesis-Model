@@ -1,0 +1,3 @@
+output,rmse_percentage_improvement,mae_percentage_improvement,r2_change
+peak_displacement,72.61935062713324,78.59769533015177,0.4326962594424072
+rms_displacement,73.26789728763441,77.72259337451246,0.4350953464507119
