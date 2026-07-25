@@ -1,0 +1,2 @@
+model,number_of_inputs,training_percentage,training_samples,validation_samples,test_samples,repeat,random_seed,epochs_completed,best_epoch,best_validation_loss,training_time_seconds
+standard_NN,8,100,3500,750,750,1,42,99,49,0.12623204290866852,11.772880666991114

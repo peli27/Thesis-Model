@@ -1,0 +1,3 @@
+model,number_of_inputs,training_samples,validation_samples,epochs_completed,best_epoch,best_validation_loss,training_time_seconds
+standard_NN,8,3500,750,215,165,0.07728731632232666,27.26641295900481
+physics_guided_NN,13,3500,750,202,152,0.01935221254825592,27.927102749999904

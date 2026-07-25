@@ -1,0 +1,2 @@
+model,number_of_inputs,training_percentage,training_samples,validation_samples,test_samples,repeat,random_seed,epochs_completed,best_epoch,best_validation_loss,training_time_seconds
+physics_guided_NN,13,75,2625,750,750,3,44,133,83,0.007962966337800026,12.027458459007903

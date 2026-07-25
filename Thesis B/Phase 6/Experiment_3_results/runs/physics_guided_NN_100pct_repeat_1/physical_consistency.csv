@@ -1,0 +1,3 @@
+model,training_percentage,training_samples,repeat,output,negative_prediction_count,number_of_test_samples,negative_prediction_percent
+physics_guided_NN,100,3500,1,peak_displacement,11,750,1.4666666666666666
+physics_guided_NN,100,3500,1,rms_displacement,22,750,2.933333333333333

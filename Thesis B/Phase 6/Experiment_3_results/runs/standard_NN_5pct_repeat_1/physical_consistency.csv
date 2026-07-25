@@ -1,0 +1,3 @@
+model,training_percentage,training_samples,repeat,output,negative_prediction_count,number_of_test_samples,negative_prediction_percent
+standard_NN,5,175,1,peak_displacement,175,750,23.333333333333332
+standard_NN,5,175,1,rms_displacement,205,750,27.333333333333332

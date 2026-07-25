@@ -1,0 +1,33 @@
+{
+  "experiment": "Phase 6 Experiment 2 - unseen resonance generalisation",
+  "random_seed": 42,
+  "training_frequency_ratio_ranges": [
+    [
+      0.2,
+      0.8
+    ],
+    [
+      1.2,
+      2.0
+    ]
+  ],
+  "excluded_training_interval": [
+    0.8,
+    1.2
+  ],
+  "test_frequency_ratios": [
+    0.5,
+    0.8,
+    0.9,
+    0.95,
+    1.0,
+    1.05,
+    1.1,
+    1.2,
+    1.5
+  ],
+  "training_samples": 3500,
+  "validation_samples": 750,
+  "test_samples_per_ratio": 750,
+  "test_design": "Paired test beams; only excitation frequency changes by ratio."
+}
