@@ -161,5 +161,3 @@ if __name__ == "__main__":
             train_hybrid_dataframe,
             repeat_number,
         )
-
-    print("\nExperiment 3 dataset preparation complete.")

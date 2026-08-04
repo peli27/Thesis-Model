@@ -256,5 +256,3 @@ if __name__ == "__main__":
             test_dataframe,
             f"test_ratio_{ratio_label(test_ratio)}",
         )
-
-    print("\nExperiment 2 dataset generation complete.")

@@ -437,6 +437,3 @@ if __name__ == "__main__":
 
         if np.isclose(uncertainty_level, 0.0):
             check_zero_uncertainty(test_dataframe, test_known)
-
-    print("\nExperiment 1 uncertainty datasets generated successfully.")
-    print(f"Files saved in: {OUTPUT_DIR}")

@@ -644,6 +644,3 @@ if __name__ == "__main__":
     )
 
     save_uncertainty_plots(metrics_dataframe)
-
-    print("\nExperiment 1 completed successfully.")
-    print(f"Results saved in: {RESULTS_DIR}")

@@ -1,0 +1,2 @@
+model,training_samples,validation_samples,epochs_completed,best_epoch,best_validation_loss,training_time_seconds
+standard_NN,3500,750,273,223,0.08024421334266663,34.864740083998186

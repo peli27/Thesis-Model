@@ -1142,6 +1142,3 @@ if __name__ == "__main__":
     save_frequency_r2_plot(metrics_dataframe)
     save_training_time_plot(training_summary)
     save_negative_prediction_plot(consistency_summary)
-
-    print("\nExperiment 3 complete.")
-    print(f"Results saved in: {RESULTS_DIR}")

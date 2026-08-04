@@ -884,7 +884,5 @@ if __name__ == "__main__":
     save_resonance_scatter_plot(predictions_dataframe)
     save_negative_prediction_plot(consistency_dataframe)
 
-    print("\nExperiment 2 completed successfully.")
-    print(f"Results saved in: {RESULTS_DIR}")
     print("\nExact-resonance comparison:")
     print(resonance_comparison.to_string(index=False))

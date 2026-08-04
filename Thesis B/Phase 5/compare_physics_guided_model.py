@@ -171,5 +171,3 @@ for output_name in ["peak_displacement", "rms_displacement"]:
     plt.tight_layout()
     plt.savefig(PLOTS_DIR / (f"error_vs_resonance_proximity_{output_name}.png"), dpi=300)
     plt.close()
-
-print("Error vs resonance proximity plots saved.")

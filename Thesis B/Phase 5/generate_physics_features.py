@@ -154,7 +154,3 @@ if __name__ == "__main__":
             dataset_name=dataset_name,
             input_path=input_path,
         )
-
-    print(
-        "\nPhysics-guided dataset generation complete."
-    )
