@@ -1,0 +1,77 @@
+{
+  "test": "test_2_unseen_geometry",
+  "dataset": "/Users/112708_admin/Desktop/Thesis Model/Thesis C/data/test_datasets/unseen_geometry_dataset.csv",
+  "dataset_sha256": "63a3fd1fd875e13cc024ea3ea8b2fa236e5f30b36c7db51b5348cfa56291fd45",
+  "main_dataset_sha256": "0c4943eda90ba783492723f73b9a0eb04a413a0ffd86b2fdc257afa7595b9acf",
+  "split_sha256": "048e91daf814e85fe31556352baecf32bcdbd049819f431012986fbf6e5634c5",
+  "shared_preprocessing_sha256": "e3487015074d0d8b753917d76659db03a2120f004d137a55d65fb4d1e295e3fd",
+  "training_sampling_ranges": {
+    "L": [
+      1.6,
+      2.4
+    ],
+    "h": [
+      0.008,
+      0.012
+    ],
+    "E": [
+      185000000000.0,
+      225000000000.0
+    ],
+    "rho": [
+      7450.0,
+      8250.0
+    ],
+    "zeta": [
+      0.005,
+      0.02
+    ],
+    "pressure_amplitude": [
+      0.1,
+      30.0
+    ],
+    "frequency_ratio": [
+      0.5,
+      1.5
+    ]
+  },
+  "test_case_counts": {
+    "Unseen thickness": 250,
+    "Unseen length": 250
+  },
+  "error_definition": "prediction - true",
+  "prediction_clipping": false,
+  "timing": "Median warmed CPU batch time including preprocessing; amortised time is not single-query latency",
+  "models": [
+    {
+      "model": "Baseline MLP",
+      "checkpoint_sha256": "28c7d1de9bfc1a96a313d1e39aaccd8c9a0cf20c7615d3d2500c6e78fc94fc14",
+      "input_scaler_sha256": "ade3b30484099797a2666d9b0233c462cb7ea67a945377cbed1823c60d6d04ba",
+      "output_scaler_sha256": "9b22c713d188cf7ad27c2c8071ddbc80d1464dc2d77933c588231abf2f55e7ef"
+    },
+    {
+      "model": "Physics-Guided NN",
+      "checkpoint_sha256": "c8e125124199f0d1187ebf2b2f6fbd0a9187493899a3ab8273628397f6a76a21",
+      "input_scaler_sha256": "653687366796c8566466a507b812d4351fb35f33102e08164e68a99702ba25da",
+      "output_scaler_sha256": "9b22c713d188cf7ad27c2c8071ddbc80d1464dc2d77933c588231abf2f55e7ef"
+    },
+    {
+      "model": "Physics-Estimate Hybrid",
+      "checkpoint_sha256": "38b6a71ea1d01981486c73aea0c7b2275fdb72accaab8c8fa1be0f77e15ca713",
+      "input_scaler_sha256": "fd9a8f5d6e9dc712abc2d7ea537ff965b53c90846ca64208abd4066a0787fe3c",
+      "output_scaler_sha256": "9b22c713d188cf7ad27c2c8071ddbc80d1464dc2d77933c588231abf2f55e7ef"
+    },
+    {
+      "model": "Residual-Learning Hybrid",
+      "checkpoint_sha256": "db2d5818d87654662af2c6feaecd57474c6913a548176c9af5e9fad6564331e2",
+      "input_scaler_sha256": "ade3b30484099797a2666d9b0233c462cb7ea67a945377cbed1823c60d6d04ba",
+      "output_scaler_sha256": "0380228399b802b95083c746500bd6d20e8c5c51e9f057c57063f7b7ea4cd5ee"
+    },
+    {
+      "model": "Physics-Regularised NN",
+      "checkpoint_sha256": "5b07ab052fd8ed2ddb99181d77ece6b32e5234678f9ec90de586f9eadf60bcc7",
+      "input_scaler_sha256": "ade3b30484099797a2666d9b0233c462cb7ea67a945377cbed1823c60d6d04ba",
+      "output_scaler_sha256": "9b22c713d188cf7ad27c2c8071ddbc80d1464dc2d77933c588231abf2f55e7ef"
+    }
+  ]
+}

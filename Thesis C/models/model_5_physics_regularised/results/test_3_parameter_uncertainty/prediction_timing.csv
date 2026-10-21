@@ -1,0 +1,8 @@
+model,test_case,uncertainty_level_percent,median_batch_seconds,device,torch_threads,n_samples,timing_repeats,amortised_seconds_per_sample,timing_note
+Physics-Regularised NN,Nominal reference,0.0,0.0032071045134216547,cpu,1,500,10,6.414209026843309e-06,Measured independently on this input batch
+Physics-Regularised NN,3A Known perturbation,2.5,0.0010023954964708537,cpu,1,500,10,2.0047909929417073e-06,Measured independently on this input batch
+Physics-Regularised NN,3B Unknown perturbation,2.5,0.0032071045134216547,cpu,1,500,10,6.414209026843309e-06,Reused timing of identical nominal-reference inputs
+Physics-Regularised NN,3A Known perturbation,5.0,0.0010441670310683548,cpu,1,500,10,2.0883340621367095e-06,Measured independently on this input batch
+Physics-Regularised NN,3B Unknown perturbation,5.0,0.0032071045134216547,cpu,1,500,10,6.414209026843309e-06,Reused timing of identical nominal-reference inputs
+Physics-Regularised NN,3A Known perturbation,10.0,0.0010806669597513974,cpu,1,500,10,2.161333919502795e-06,Measured independently on this input batch
+Physics-Regularised NN,3B Unknown perturbation,10.0,0.0032071045134216547,cpu,1,500,10,6.414209026843309e-06,Reused timing of identical nominal-reference inputs

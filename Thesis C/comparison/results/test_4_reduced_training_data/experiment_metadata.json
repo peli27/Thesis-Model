@@ -1,0 +1,47 @@
+{
+  "dataset_sha256": "0c4943eda90ba783492723f73b9a0eb04a413a0ffd86b2fdc257afa7595b9acf",
+  "split_sha256": "048e91daf814e85fe31556352baecf32bcdbd049819f431012986fbf6e5634c5",
+  "script_sha256": "877de79d853db437f6ebd0f51709c430abb277876eeadd6d327513b024a15642",
+  "shared_preprocessing_sha256": "e3487015074d0d8b753917d76659db03a2120f004d137a55d65fb4d1e295e3fd",
+  "data_percentages": [
+    100,
+    50,
+    25,
+    10
+  ],
+  "training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "subset_seed": 2026,
+  "subset_sizes": {
+    "100": 3499,
+    "50": 1749,
+    "25": 874,
+    "10": 349
+  },
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "max_epochs": 500,
+  "patience": 30,
+  "physics_weight": 0.01,
+  "device": "cpu",
+  "cpu_threads": 1,
+  "interop_threads": 1,
+  "native_thread_limits": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_THREAD_LIMIT": "1"
+  },
+  "versions": {
+    "python": "3.10.18",
+    "numpy": "1.26.4",
+    "sklearn": "1.7.1",
+    "torch": "2.2.2"
+  },
+  "variation": "Training initialization and minibatch ordering vary; nested subsets are fixed across models and seeds"
+}

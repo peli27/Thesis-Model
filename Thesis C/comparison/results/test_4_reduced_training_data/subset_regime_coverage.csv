@@ -1,0 +1,5 @@
+training_data_percent,n_samples,below_resonance,near_resonance,above_resonance
+100,3499,700,2099,700
+50,1749,350,1049,350
+25,874,175,524,175
+10,349,70,209,70

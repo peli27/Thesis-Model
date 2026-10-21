@@ -1,0 +1,2 @@
+model,device,torch_threads,n_samples,timing_repeats,median_batch_seconds,amortised_seconds_per_sample,timing_scope
+Physics-Regularised NN,cpu,1,500,10,0.0010374374978709966,2.074874995741993e-06,All 500 cases; the strong subset reuses these predictions

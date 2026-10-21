@@ -1,0 +1,2 @@
+model,device,torch_threads,n_samples,timing_repeats,median_batch_seconds,amortised_seconds_per_sample
+Physics-Estimate Hybrid,cpu,1,751,10,0.001489791990024969,1.983744327596497e-06

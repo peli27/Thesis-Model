@@ -1,0 +1,2 @@
+model,device,torch_threads,n_samples,timing_repeats,median_batch_seconds,amortised_seconds_per_sample
+Baseline MLP,cpu,1,500,10,0.001044042015564628,2.0880840311292557e-06

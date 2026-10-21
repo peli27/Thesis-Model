@@ -1,0 +1,6 @@
+model,device,torch_threads,n_samples,timing_repeats,median_batch_seconds,amortised_seconds_per_sample
+Baseline MLP,cpu,1,500,10,0.001044042015564628,2.0880840311292557e-06
+Physics-Guided NN,cpu,1,500,10,0.001203916486701928,2.407832973403856e-06
+Physics-Estimate Hybrid,cpu,1,500,10,0.0012548539962153882,2.5097079924307765e-06
+Residual-Learning Hybrid,cpu,1,500,10,0.0013527710107155144,2.705542021431029e-06
+Physics-Regularised NN,cpu,1,500,10,0.0011579584825085476,2.3159169650170954e-06

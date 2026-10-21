@@ -1,0 +1,8 @@
+model,test_case,uncertainty_level_percent,median_batch_seconds,device,torch_threads,n_samples,timing_repeats,amortised_seconds_per_sample,timing_note
+Physics-Estimate Hybrid,Nominal reference,0.0,0.0012274790205992758,cpu,1,500,10,2.4549580411985517e-06,Measured independently on this input batch
+Physics-Estimate Hybrid,3A Known perturbation,2.5,0.001223354513058439,cpu,1,500,10,2.446709026116878e-06,Measured independently on this input batch
+Physics-Estimate Hybrid,3B Unknown perturbation,2.5,0.0012274790205992758,cpu,1,500,10,2.4549580411985517e-06,Reused timing of identical nominal-reference inputs
+Physics-Estimate Hybrid,3A Known perturbation,5.0,0.00132312549976632,cpu,1,500,10,2.64625099953264e-06,Measured independently on this input batch
+Physics-Estimate Hybrid,3B Unknown perturbation,5.0,0.0012274790205992758,cpu,1,500,10,2.4549580411985517e-06,Reused timing of identical nominal-reference inputs
+Physics-Estimate Hybrid,3A Known perturbation,10.0,0.0012557079899124801,cpu,1,500,10,2.5114159798249604e-06,Measured independently on this input batch
+Physics-Estimate Hybrid,3B Unknown perturbation,10.0,0.0012274790205992758,cpu,1,500,10,2.4549580411985517e-06,Reused timing of identical nominal-reference inputs

@@ -1,0 +1,13 @@
+{
+  "model": "Physics-Estimate Hybrid",
+  "training_data_percent": 25,
+  "training_seed": 43,
+  "n_training_samples": 874,
+  "n_validation_samples": 750,
+  "n_test_samples": 751,
+  "best_epoch": 293,
+  "epochs_completed": 323,
+  "best_validation_loss": 0.01624026708304882,
+  "training_seconds": 9.629200291994493,
+  "device": "cpu"
+}

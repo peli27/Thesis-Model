@@ -1,0 +1,13 @@
+{
+  "model": "Residual-Learning Hybrid",
+  "training_data_percent": 25,
+  "training_seed": 42,
+  "n_training_samples": 874,
+  "n_validation_samples": 750,
+  "n_test_samples": 751,
+  "best_epoch": 8,
+  "epochs_completed": 38,
+  "best_validation_loss": 0.18367119133472443,
+  "training_seconds": 1.162838333984837,
+  "device": "cpu"
+}

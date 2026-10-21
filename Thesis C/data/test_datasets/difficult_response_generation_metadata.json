@@ -1,0 +1,46 @@
+{
+  "seed": 1425,
+  "n_samples": 500,
+  "ranges": {
+    "L": [
+      1.6,
+      2.4
+    ],
+    "h": [
+      0.008,
+      0.012
+    ],
+    "E": [
+      185000000000.0,
+      225000000000.0
+    ],
+    "rho": [
+      7450.0,
+      8250.0
+    ],
+    "zeta": [
+      0.005,
+      0.02
+    ],
+    "pressure_amplitude": [
+      0.1,
+      30.0
+    ],
+    "frequency_ratio": [
+      0.85,
+      1.2
+    ]
+  },
+  "strong_threshold": 0.1,
+  "criterion": "max eta_1 over second half of simulation >= strong_threshold",
+  "main_dataset_sha256": "0c4943eda90ba783492723f73b9a0eb04a413a0ffd86b2fdc257afa7595b9acf",
+  "simulator_sha256": "e756d2a8a357f1b022abf5dd3e7676a5050020a7abed40d9e895825c50aab6c2",
+  "case_definitions_sha256": "a9e6dd3d54635d743225203ea892297f26b59fd88d9cba89e855109ee138bdb5",
+  "simulation": {
+    "b": 0.04,
+    "N": 7,
+    "t_end": 10.0,
+    "dt": 0.002,
+    "use_nonlinearity": true
+  }
+}

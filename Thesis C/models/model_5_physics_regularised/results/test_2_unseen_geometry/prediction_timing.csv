@@ -1,0 +1,2 @@
+model,device,torch_threads,n_samples,timing_repeats,median_batch_seconds,amortised_seconds_per_sample
+Physics-Regularised NN,cpu,1,500,10,0.0011579584825085476,2.3159169650170954e-06

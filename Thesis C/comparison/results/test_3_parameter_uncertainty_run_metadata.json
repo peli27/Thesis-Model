@@ -1,0 +1,64 @@
+{
+  "test": "test_3_parameter_uncertainty",
+  "dataset_sha256": "1855550d9f90f06b8e39fd7e947e7e21100d1086c8350de9cfcb30632a5ee81d",
+  "generation_metadata": {
+    "seed": 42,
+    "n_nominal_cases": 500,
+    "uncertainty_levels": [
+      0.025,
+      0.05,
+      0.1
+    ],
+    "distribution": "independent uniform [-band, band]; paired factors across bands",
+    "fixed_excitation_frequency": true,
+    "main_dataset_sha256": "0c4943eda90ba783492723f73b9a0eb04a413a0ffd86b2fdc257afa7595b9acf",
+    "split_sha256": "048e91daf814e85fe31556352baecf32bcdbd049819f431012986fbf6e5634c5",
+    "simulator_sha256": "e756d2a8a357f1b022abf5dd3e7676a5050020a7abed40d9e895825c50aab6c2",
+    "case_definitions_sha256": "79ea6e5d4f24cba086e2437556f536040a2ff6e952521159f6787b6c986bbb1f",
+    "simulation": {
+      "b": 0.04,
+      "N": 7,
+      "t_end": 10.0,
+      "dt": 0.002,
+      "use_nonlinearity": true
+    }
+  },
+  "shared_preprocessing_sha256": "e3487015074d0d8b753917d76659db03a2120f004d137a55d65fb4d1e295e3fd",
+  "known_inputs": "actual perturbed properties; physics features recalculated from actual inputs",
+  "unknown_inputs": "nominal properties only; same predictions reused across bands",
+  "regime_labels": "actual frequency ratios, used only for evaluation diagnostics",
+  "reference": "same 500 held-out nominal beams, original simulator outputs; not all 751 Test 1 samples",
+  "prediction_clipping": false,
+  "models": [
+    {
+      "model": "Baseline MLP",
+      "checkpoint_sha256": "28c7d1de9bfc1a96a313d1e39aaccd8c9a0cf20c7615d3d2500c6e78fc94fc14",
+      "input_scaler_sha256": "ade3b30484099797a2666d9b0233c462cb7ea67a945377cbed1823c60d6d04ba",
+      "output_scaler_sha256": "9b22c713d188cf7ad27c2c8071ddbc80d1464dc2d77933c588231abf2f55e7ef"
+    },
+    {
+      "model": "Physics-Guided NN",
+      "checkpoint_sha256": "c8e125124199f0d1187ebf2b2f6fbd0a9187493899a3ab8273628397f6a76a21",
+      "input_scaler_sha256": "653687366796c8566466a507b812d4351fb35f33102e08164e68a99702ba25da",
+      "output_scaler_sha256": "9b22c713d188cf7ad27c2c8071ddbc80d1464dc2d77933c588231abf2f55e7ef"
+    },
+    {
+      "model": "Physics-Estimate Hybrid",
+      "checkpoint_sha256": "38b6a71ea1d01981486c73aea0c7b2275fdb72accaab8c8fa1be0f77e15ca713",
+      "input_scaler_sha256": "fd9a8f5d6e9dc712abc2d7ea537ff965b53c90846ca64208abd4066a0787fe3c",
+      "output_scaler_sha256": "9b22c713d188cf7ad27c2c8071ddbc80d1464dc2d77933c588231abf2f55e7ef"
+    },
+    {
+      "model": "Residual-Learning Hybrid",
+      "checkpoint_sha256": "db2d5818d87654662af2c6feaecd57474c6913a548176c9af5e9fad6564331e2",
+      "input_scaler_sha256": "ade3b30484099797a2666d9b0233c462cb7ea67a945377cbed1823c60d6d04ba",
+      "output_scaler_sha256": "0380228399b802b95083c746500bd6d20e8c5c51e9f057c57063f7b7ea4cd5ee"
+    },
+    {
+      "model": "Physics-Regularised NN",
+      "checkpoint_sha256": "5b07ab052fd8ed2ddb99181d77ece6b32e5234678f9ec90de586f9eadf60bcc7",
+      "input_scaler_sha256": "ade3b30484099797a2666d9b0233c462cb7ea67a945377cbed1823c60d6d04ba",
+      "output_scaler_sha256": "9b22c713d188cf7ad27c2c8071ddbc80d1464dc2d77933c588231abf2f55e7ef"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "model": "Physics-Regularised NN",
+  "training_data_percent": 10,
+  "training_seed": 44,
+  "n_training_samples": 349,
+  "n_validation_samples": 750,
+  "n_test_samples": 751,
+  "best_epoch": 250,
+  "epochs_completed": 280,
+  "best_validation_loss": 0.1253296434879303,
+  "training_seconds": 3.864079417020548,
+  "device": "cpu"
+}

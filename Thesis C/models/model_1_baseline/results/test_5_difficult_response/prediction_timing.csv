@@ -1,0 +1,2 @@
+model,device,torch_threads,n_samples,timing_repeats,median_batch_seconds,amortised_seconds_per_sample,timing_scope
+Baseline MLP,cpu,1,500,10,0.001040083501720801,2.080167003441602e-06,All 500 cases; the strong subset reuses these predictions

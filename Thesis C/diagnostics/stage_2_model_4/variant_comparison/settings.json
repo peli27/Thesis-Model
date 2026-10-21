@@ -1,0 +1,43 @@
+{
+  "data": "data/main/nonlinear_beam_dataset.csv",
+  "split": "data/splits/main_split_indices.npz",
+  "output": "diagnostics/stage_2_model_4/variant_comparison",
+  "column_map": null,
+  "width": 0.04,
+  "observation_x": 0.65,
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "max_epochs": 500,
+  "patience": 30,
+  "batch_size": 64,
+  "lr": 0.001,
+  "columns": {
+    "L": "L",
+    "h": "h",
+    "E": "E",
+    "rho": "rho",
+    "zeta": "zeta",
+    "pressure": "pressure_amplitude",
+    "fexc": "excitation_frequency",
+    "f1": "f1",
+    "f2": "f2",
+    "f3": "f3",
+    "f4": "f4",
+    "peak": "peak_displacement",
+    "rms": "rms_displacement"
+  },
+  "split_sizes": {
+    "train": 3499,
+    "val": 750,
+    "test": 751
+  },
+  "variants": {
+    "4A": "raw inputs + residual target / residual SD",
+    "4B": "raw + analytical inputs + residual target / residual SD",
+    "4C": "raw inputs + residual target / direct-response SD"
+  },
+  "note": "Only training and validation rows evaluated. Held-out test set is not used for variant selection."
+}

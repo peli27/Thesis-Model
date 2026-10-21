@@ -1,0 +1,13 @@
+{
+  "model": "Physics-Guided NN",
+  "training_data_percent": 10,
+  "training_seed": 42,
+  "n_training_samples": 349,
+  "n_validation_samples": 750,
+  "n_test_samples": 751,
+  "best_epoch": 142,
+  "epochs_completed": 172,
+  "best_validation_loss": 0.03287062421441078,
+  "training_seconds": 2.3018312909989618,
+  "device": "cpu"
+}

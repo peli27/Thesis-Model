@@ -1,0 +1,13 @@
+{
+  "model": "Baseline MLP",
+  "training_data_percent": 25,
+  "training_seed": 42,
+  "n_training_samples": 874,
+  "n_validation_samples": 750,
+  "n_test_samples": 751,
+  "best_epoch": 291,
+  "epochs_completed": 321,
+  "best_validation_loss": 0.023089012131094933,
+  "training_seconds": 9.490414166008122,
+  "device": "cpu"
+}

@@ -1,0 +1,38 @@
+{
+  "dataset": "data/main/nonlinear_beam_dataset.csv",
+  "split": "data/splits/main_split_indices.npz",
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "lambdas": [
+    0.0,
+    0.01
+  ],
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "max_epochs": 500,
+  "patience": 30,
+  "architecture": [
+    7,
+    64,
+    64,
+    32,
+    6
+  ],
+  "width_m": 0.04,
+  "response_location_ratio": 0.65,
+  "resonance_ratio_bounds": [
+    0.85,
+    1.2
+  ],
+  "forcing_training_quantile_cutoffs": [
+    9.806460607941776,
+    19.99832743507626
+  ],
+  "forcing_band_note": "Low/medium/high pressure amplitude terciles; not a direct measure of nonlinear intensity.",
+  "evaluation_split": "validation only",
+  "checkpoint_selection": "minimum validation data loss + lambda*validation physics loss",
+  "physics_loss_note": "Six-output data MSE and two-output displacement physics MSE; coefficient ratio per displacement = 3*lambda."
+}
