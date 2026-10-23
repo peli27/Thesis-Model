@@ -1,0 +1,16 @@
+{
+  "dataset_sha256": "0c4943eda90ba783492723f73b9a0eb04a413a0ffd86b2fdc257afa7595b9acf",
+  "split_sha256": "048e91daf814e85fe31556352baecf32bcdbd049819f431012986fbf6e5634c5",
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "budgets": [
+    100
+  ],
+  "model_4": "4B: nine inputs, physics estimates supplied and residuals reconstructed",
+  "test": 1,
+  "physics_weight": 0.01,
+  "note": "All variants fixed before these test evaluations; prior held-out tests had been inspected"
+}
